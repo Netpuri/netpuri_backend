@@ -18,7 +18,7 @@ public class PredictController {
     private final WebClient webClient;
 
     public PredictController(WebClient.Builder webClientBuilder) {
-        this.webClient = webClientBuilder.baseUrl("http://localhost:5000").build();
+        this.webClient = webClientBuilder.baseUrl("http://localhost:5050").build();
     }
 
     @PostMapping(value = "/checkText", produces = MediaType.APPLICATION_JSON_VALUE)
